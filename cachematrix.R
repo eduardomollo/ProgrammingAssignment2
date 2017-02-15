@@ -1,3 +1,4 @@
+## makeCacheMatrix creates an R object that stores a matrix and the matrix's Inverse 
 makeCacheMatrix <- function(x = matrix()) {
   
   m <- NULL
@@ -15,6 +16,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
+## cacheSolve takes an argument from makeCacheMatrix and retrieves the Inverse 
+## from the cached value stored in the makeCacheMatrix environment
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
